@@ -158,7 +158,7 @@ Gold:
 
 ## 💰 Milestone Payment 구조 (Publisher 계약)
 
-AAA 개발사는 대부분 publisher로부터 milestone 기반 cost-recoup + royalty 계약. 아래는 업계 평균.
+AAA 개발사는 대부분 publisher로부터 milestone 기반 cost-recoup + royalty 계약. 아래는 **업계 추정 평균**이며, 실제 계약은 IP 보유·엔진 제공·시장 규모에 따라 편차가 매우 크다 (signing 이 30%인 경우, royalty split이 50/50인 경우 등). 특정 계약 근거로 사용하려면 반드시 공인 game business lawyer와 교차 검증할 것.
 
 | Milestone | 전체 지급 비율 | 조건 |
 |---|---|---|
