@@ -293,6 +293,12 @@ To contribute: Fork → Branch (`resource/your-topic`) → Add content → Pull 
 
 MIT License — see [LICENSE](./LICENSE) for details.
 
+## Trademarks & Legal Notice
+
+All product names, game titles, studio names, and logos referenced in this repository (including but not limited to PlayStation, Xbox, Nintendo Switch, Steam, Epic Games, Unity, Unreal, and any specific game titles) are **trademarks of their respective owners**. This repository is not affiliated with, endorsed by, or sponsored by any of these companies. References are made for educational and analytical purposes only.
+
+This repository is **not legal, regulatory, or contractual advice**. Platform certification requirements, regional regulations (loot-box laws, ratings boards, probability disclosure rules), and publishing contracts change frequently and vary by jurisdiction. Consult official platform documentation, qualified legal counsel, and current regulatory texts before acting on any information here.
+
 ---
 
 *Inspired by [awesome-design](https://github.com/gztchan/awesome-design) (★15k+). Applied to the craft of game design.*

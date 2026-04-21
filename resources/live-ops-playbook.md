@@ -29,7 +29,7 @@ Week 8-10| End-season push: XP 이벤트, BP 마감 drive
 Week 11-12| Finale event, next-season teaser
 ```
 
-### Fortnite Chapter 5 시즌 구성 (2024)
+### Fortnite Chapter 5 시즌 구성 (2024 기준 · 이후 Chapter 6+ 지속 진행)
 - Battle Pass 100 tiers, 10주 진행
 - Mid-season live event (Big Bang concert, The Device)
 - Collaboration: Marvel, Star Wars, 애니 IP
@@ -122,6 +122,18 @@ Sprint Plan (2주)
 - **Reddit sentiment** (scraped): 주간 긍정/부정 비율
 - **Discord member growth**: DAU와 상관관계
 - **Streamer concurrent**: Twitch·YouTube 평균 viewer
+
+### KPI 기준값 출처 각주
+
+위 Engagement / Monetization / Economy 섹션의 수치 기준(DAU/MAU 0.3+, D1 60%+, D7 30%+, D30 15%+, ARPDAU, conversion 2~5%, crash-free 99.7%, SLA 99.95% 등)은 어느 한 공식 문서에서 온 수치가 아니라 **업계 합의 범위**다. 공개 기반 자료로 교차 확인할 수 있는 곳:
+
+- **[Newzoo Global Games Market Report](https://newzoo.com/)** — 연간 장르·지역·플랫폼별 수익·DAU 규모
+- **[Sensor Tower State of Mobile Gaming](https://sensortower.com/blog)** — 모바일 ARPPU·LTV·리텐션 벤치마크
+- **[GameAnalytics Mobile Gaming Benchmarks](https://gameanalytics.com/benchmarks/)** — 장르별 D1/D7/D30 코호트 중위값 (F2P 기준)
+- **[Unity Gaming Report](https://unity.com/gaming-report)** — 크로스플랫폼 개발자·플레이어 행동 통계
+- **[GDC Vault Business & Advocacy track](https://gdcvault.com/)** — 공개 talks에서 스튜디오별 기준값 부분 공개
+
+> 본 섹션의 수치는 "업계 건강 신호" 해석용 범위이지 특정 게임 KPI 목표를 설정하는 근거로 쓰기엔 부족하다. 각 장르·지역·F2P/프리미엄 여부에 따라 ±50% 이상 편차가 정상이다.
 
 ---
 
@@ -231,7 +243,7 @@ Sprint Plan (2주)
 - **2010.09.30**: 1.0 출시 → 품질 미달, 거의 파산 직전. 공식 사과문 발행
 - **2010.12**: Naoki Yoshida (Yoshi-P)가 producer/director로 임명, 전면 재개발 지시
 - **2013.08.27**: 2.0 "A Realm Reborn"으로 재출시 (PS3 + Windows)
-- 현재: MMO 시장 수위권, 2,400만+ 계정
+- 현재: MMO 시장 수위권, 2,400만+ 계정 (2023 Square Enix 공식 발표 시점 · 누적 수치)
 - **교훈**: 경영진의 "전면 reboot" 결단 + 후임 디렉터 임명은 재개발 공개 **3년 전**
 
 ### Recovery Failed — 복구 실패 사례 (균형을 위해)
@@ -277,6 +289,39 @@ Sprint Plan (2주)
 | USA | FTC 조사·합의 | 2022.12 | Epic Games 총 **$520M** (dark patterns refund $245M + COPPA privacy $275M, FTC 역대 최대) |
 
 > 한국 확률 공시 의무화는 AAA 글로벌 출시 시 **한국 서비스 전용 UI 대응** 필요. 전체 구매 가능한 IAP는 확률 명시 및 CSV export 기능 권장.
+
+---
+
+## 🌏 Asia Live Service 사례 — 서구 편중 교정
+
+서구·일본 AAA 위주의 라이브 오퍼레이션 담론은 한국·중국의 대형 라이브 서비스 실제 운영 관행과 상당한 격차가 있다. 다음은 본 repo의 공개 출처 기반 교정.
+
+### 한국 — 장수 MMO·확률형 아이템·규제 대응
+
+- **리니지 (NCsoft, 2000.09~)**: 세계 상용 MMORPG 장수 서비스 중 하나. 25년+ 운영. 수익 모델 진화: **월정액 → F2P → 확률형 아이템 중심 → 2024 확률 공시 대응**. 리니지W (2021) 세계관 통합 리부팅.
+- **메이플스토리 (Nexon, 2003.04~)**: 2024.01 **큐브 확률 조작 공정위 과징금 ₩116억** — 한국 확률형 아이템 규제의 결정적 선례. 자율 공시 → 법적 의무화를 촉발한 사건.
+- **로스트아크 (Smilegate RPG, 2018 KR → 2022 Global via Amazon Games)**: K-MMO 글로벌 서비스 모델. Amazon Games publishing partnership의 공개 사례.
+- **우마무스메 프리티 더비 한국 서버 (Kakao Games, 2022)**: 일본 Cygames IP 한국 퍼블리싱. **2022.08 이벤트 운영 불평등 논란** → 오프라인 "마차 시위" → 한국 게이머 권리 의식 각성 전환점. 서비스는 계속되나 live ops 정책 결정 시 **한국 유저의 규제·여론 리스크**를 교과서급으로 보여준 사례.
+
+### 중국 — 글로벌 퍼블리싱 규모 · Gacha 파이프라인
+
+- **원신 Genshin Impact (HoYoverse, 2020.09~)**: **5~6주 버전 cadence 표준화**. 4.x → 5.x까지 버전당 2캐릭터 + 2이벤트 패턴이 글로벌 gacha 파이프라인의 사실상 표준이 됨. Pity 90-pull hard / 75~80 soft.
+- **Honkai: Star Rail (HoYoverse, 2023.04~)**: Genshin 파이프라인을 턴제 RPG로 복제·개선. Cross-game economy·이벤트 설계 공유.
+- **PUBG Mobile (Krafton IP + Tencent 글로벌 퍼블리싱, 2018~)**: 모바일 BR 최대 DAU 베이스. **중국 본토는 별도 "Peacekeeper Elite (和平精英)" 로 재출시** — 판호 제도와 규제 회피 디자인의 실제 사례.
+- **王者荣耀 Honor of Kings (Tencent TiMi, 2015~)**: 중국 내 DAU 1억+ 수준, 세계 최대 MOBA. 글로벌 출시(2024)로 **중국 IP의 역방향 글로벌화** 트렌드 촉발.
+- **Rise of Kingdoms / State of Survival 류 SLG (Lilith / FunPlus 등)**: 중국 서버 전쟁·서버 합병·KVK 매치 구조. **Kingdom vs Kingdom**이 글로벌 PvP 라이브 이벤트 형식의 한 갈래로 정착.
+
+### 한·중 특유의 live-ops 파이프라인 차이
+
+| 축 | 서구 AAA | 한국 MMO | 중국 Gacha/SLG |
+|---|---|---|---|
+| 시즌 주기 | 8~12주 | 월 단위 이벤트 + 분기 업데이트 | 5~6주 버전 |
+| 수익 구조 | 배틀패스 + 스킨 | 확률형 아이템 + 패키지 | 가챠 + 이벤트 한정 |
+| 규제 대응 | 지역 exclude·KSA 등 | **법적 확률 공시 의무** (2024~) | **판호 승인 + 확률 100% 공시** (2017~) |
+| 플레이어 권리 의식 | 환불·소송 중심 | **오프라인 시위·공정위 신고 활용** | 웹 평점 조작·게시판 운영 대응 |
+| 서비스 종료 문화 | 공지 6개월 + 오프라인 모드 시도 | 중국 서버 강제 접속 차단 병행 가능 | **서버 합병 (Server Merge)**이 종료 대안 |
+
+> 본 섹션은 공개 뉴스·공정위 보도자료·공식 퍼블리셔 공지 기반. 한국/중국 내부 운영 문서(PMC·NDA 자료)는 인용하지 않는다.
 
 ---
 
