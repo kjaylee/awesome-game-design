@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Open-ended discussion
+    url: https://github.com/kjaylee/awesome-game-design/discussions
+    about: For topic ideas, scope questions, or open conversation that isn't a concrete resource suggestion.
+  - name: 📖 Read the Contributing Guide first
+    url: https://github.com/kjaylee/awesome-game-design/blob/master/CONTRIBUTING.md
+    about: Every issue should follow the standards in the Contributing guide. Please read before opening one.
