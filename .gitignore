@@ -1,2 +1,6 @@
 game-docs/
 push-to-github.sh
+.omc/
+.claude/
+docs/.bkit-memory.json
+docs/.pdca-status.json

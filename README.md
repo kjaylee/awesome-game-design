@@ -27,6 +27,9 @@ This repository is a **comprehensive knowledge base for game designers** — fro
   - [Game Balancing](#-game-balancing)
   - [Art Direction](#-art-direction)
   - [Marketing & QA](#-marketing--qa)
+  - [🆕 Production Pipeline (AAA)](#-production-pipeline-aaa)
+  - [🆕 Platform Certification](#-platform-certification)
+  - [🆕 Live Ops Playbook](#-live-ops-playbook)
 - [How to Use This Repo](#how-to-use-this-repo)
 - [Contributing](#contributing)
 
@@ -171,6 +174,60 @@ From first commit to launch week and beyond:
 
 ---
 
+### 🏭 Production Pipeline (AAA)
+
+**[→ resources/production-pipeline.md](./resources/production-pipeline.md)**
+
+AAA 스튜디오가 실제로 쓰는 제작 파이프라인 — 인디·AA가 "왜 AAA는 2~5년 걸리나"를 이해할 때도 유용:
+
+**전체 단계**: Concept → Pre-production → Production (Alpha/Beta/Code Lock) → Certification → Launch → Live
+**Gate Criteria**: 각 단계 통과 조건 명문화 (Blocker 수, 크래시 율, Cert 통과율, Localization lock)
+**Vertical Slice**: Uncharted 4·Destiny·Spider-Man·AC Valhalla의 실제 VS 규모와 체크리스트
+**Greenlight**: 10장 피치덱 표준 구조 + Publisher 판정 rubric (7개 항목 가중치)
+**Milestone Payments**: Signing 15% → Prototype 10% → Alpha 20% → Beta 20% → Gold 15% → Launch 10% + Royalty
+**RACI / DRI**: Design pillar 변경·scope cut·platform 추가·delay·crunch 결정에 대한 책임 매트릭스
+**심화 사례**: Uncharted 4 감독 교체 reboot, Cyberpunk 2077 cert fail, Baldur's Gate 3의 EA-as-production, Starfield 엔진 동시 개발
+
+---
+
+### 🎮 Platform Certification
+
+**[→ resources/platform-certification.md](./resources/platform-certification.md)**
+
+플랫폼 인증은 AAA 출시 일정 리스크 1위 — 이 문서 하나로 커버:
+
+**플랫폼별 상세**: PS TRC 200+ / Xbox XR 150+ / Switch Lotcheck / Steam Partner / Apple App Review / Google Play / EGS
+**리젝 TOP 10 (PS5)**: Save crash, trophy 오류, region lock 미적용, accessibility 누락 등
+**XAGs (Xbox Accessibility Guidelines) 60+**: Input·Audio·Visual·Cognitive·Motor 카테고리별 상세
+**Nintendo Lotcheck 특별 요구**: Docked vs Handheld 이중 성능, JoyCon 전 조합, Parental control
+**Rating 기관 비교**: ESRB / PEGI / CERO / USK / 게임위 / ACB / 판호 — 비용·기간·제출 방식
+**지역 규제**: 한국 확률 공시 의무화(2024.03), 중국 판호 제도, 벨기에 loot box 금지
+**공통 Fail Top 20**: 크로스 플랫폼에서 반복 발생하는 리젝 사유
+**Cert 타임라인**: Gold 4주 전 제출, 3개 리전 병렬, Day-1 patch 별도 제출 기준
+
+---
+
+### 🔁 Live Ops Playbook
+
+**[→ resources/live-ops-playbook.md](./resources/live-ops-playbook.md)**
+
+출시는 1일차 — 3~10년 live 서비스 운영 매뉴얼:
+
+**서비스 모델 분류**: Season-based (Fortnite/Apex), Expansion (FF14/WoW), Episodic, Gacha, Hybrid
+**시즌 구조 표준**: 8~12주 시즌의 Week 0~12 주간 이벤트 배치 (Fortnite, Destiny 2 Episode, FF14 cadence)
+**KPI 대시보드 전문**:
+  - Engagement: DAU/MAU, sticky ratio, D1/D7/D30 retention
+  - Monetization: ARPDAU, ARPPU, conversion, LTV, whale share
+  - Economy: inflation index, source/sink ratio, rarity drift
+  - Operational: crash-free rate, SLA, MTTR
+**Anti-cheat 비교**: Easy Anti-Cheat / BattlEye / Vanguard / Denuvo / VAC — 커널 레벨과 트레이드오프
+**Launch Disaster Recovery**: Cyberpunk 3년·No Man's Sky 8년·FFXIV Realm Reborn 전면 reboot 사례
+**Sunset Playbook**: D-180부터 D+30까지 서비스 종료 체크리스트 (Concord 2주 종료, WildStar, P.T. 사례)
+**Monetization Compliance**: 한국 확률 공시 2024.03, 중국 판호, 벨기에 전면 금지, FTC Fortnite $245M 합의
+**A/B 실험 운영**: Riot·Supercell·Epic의 실험 트래픽·평가 지표·의사결정 표준
+
+---
+
 ## How to Use This Repo
 
 ### As a Claude System Prompt
@@ -196,11 +253,19 @@ Paste [SKILL.md](./SKILL.md) before your message to Claude to activate full game
 2. **resources/postmortems.md** → retrospective reference ("what has gone wrong before?")
 3. SKILL.md GDD template → standard format for all new project documents
 
+### For AAA / Large Studios
+
+1. **resources/production-pipeline.md** → Internal pre-prod·production·cert timeline 템플릿 대체 또는 교차 검증용. Greenlight 판정 rubric을 내부 greenlight review에 직접 적용 가능
+2. **resources/platform-certification.md** → QA 리드·프로듀서를 위한 cert 사전 체크리스트. 1차 submission 전 self-audit 기준으로 사용. 지역 규제(한국 확률 공시, 중국 판호)는 publishing·legal 팀과 공유
+3. **resources/live-ops-playbook.md** → Live ops director·PM을 위한 KPI·sunset·A/B 프레임워크. Launch disaster 사례는 neue 프로젝트의 리스크 리뷰에 활용
+4. **resources/game-balancing.md** → PvP ELO·MMR, gacha pity, idle cost curve는 기존 AAA 밸런스팀 공식과 교차 확인 가능
+
 ### For Students
 
 1. Read all postmortems — honest game design education
 2. Study famous GDDs — understand the gap between plan and reality
 3. Apply balancing formulas to class projects before guessing numbers
+4. Production pipeline — 업계 진입 준비생을 위한 "AAA는 어떻게 일하는가" 설명서
 
 ---
 
