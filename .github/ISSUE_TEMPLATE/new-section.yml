@@ -1,0 +1,69 @@
+name: 🆕 New Resource File Proposal
+description: Propose a new top-level resource file (not just an entry within an existing file).
+title: "[New Section] "
+labels: ["new-section", "needs-triage", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New resource files are a larger commitment than entries. Before proposing:
+
+        - The topic should not already be covered in an existing file.
+        - You should be prepared to draft the initial content, or provide enough source material for a maintainer to draft it.
+        - The topic should have at least 5–10 substantive sub-topics worth documenting.
+
+        Examples of possible future sections: `playtest-methodology.md`, `esports-design.md`, `monetization-math.md`, `ai-in-games.md`, `user-research.md`.
+
+  - type: input
+    id: proposed-filename
+    attributes:
+      label: Proposed file name
+      description: Suggested kebab-case filename under `resources/`.
+      placeholder: playtest-methodology.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & scope boundaries
+      description: What is in scope? What is explicitly out? How does this differ from existing files?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Proposed outline
+      description: Top-level sections (h2 and h3) this file would contain.
+      placeholder: |
+        ## 1. ...
+        ## 2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-sources
+    attributes:
+      label: Primary sources to draw from
+      description: GDC talks, books, postmortems, researchers' articles. URLs preferred.
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-audience
+    attributes:
+      label: Who is this for?
+      description: Indie devs? AAA producers? Academics? Students? A mix?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: commitment
+    attributes:
+      label: Contributor commitment
+      options:
+        - label: I am willing to draft the initial content myself (recommended) OR provide ≥5 primary source documents for a maintainer to synthesize.
+          required: true
+        - label: I have read the [Contributing Guide](../blob/master/CONTRIBUTING.md) and understand the standards.
+          required: true

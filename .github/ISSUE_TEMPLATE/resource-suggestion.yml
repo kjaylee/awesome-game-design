@@ -1,0 +1,80 @@
+name: 📚 Resource Suggestion
+description: Suggest a new GDD, postmortem, framework, or reference to add to an existing resource file.
+title: "[Resource] "
+labels: ["resource-suggestion", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand this curation. Before opening, please confirm the suggestion meets **the standard**:
+
+        > "What will a game designer learn from this that they couldn't get from just Googling the title?"
+
+        If the answer isn't clear yet, please open a Discussion instead.
+
+  - type: input
+    id: title
+    attributes:
+      label: Game / Topic title
+      description: The name of the game, document, or framework being suggested.
+      placeholder: e.g., "Disco Elysium GDD", "Machinations framework"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Target resource file
+      description: Which existing resource file would this entry belong in?
+      options:
+        - resources/famous-gdds.md
+        - resources/postmortems.md
+        - resources/narrative-design.md
+        - resources/game-balancing.md
+        - resources/art-direction.md
+        - resources/marketing-qa.md
+        - resources/production-pipeline.md
+        - resources/platform-certification.md
+        - resources/live-ops-playbook.md
+        - (Needs a new resource file — see "New Section" template instead)
+    validations:
+      required: true
+
+  - type: textarea
+    id: primary-source
+    attributes:
+      label: Primary source (URL)
+      description: Direct link to the GDD, postmortem, GDC talk, article, or authoritative source. Prefer original publication over third-party summaries.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-lesson
+    attributes:
+      label: Key Lesson(s)
+      description: |
+        What specifically will a game designer learn from this? At least one concrete lesson in 2–4 sentences. Not a general summary — a lesson.
+      placeholder: |
+        Lesson 1 — [title]: ...
+        Lesson 2 — [title]: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Studio, year, related entries, translation notes, or anything else relevant.
+
+  - type: checkboxes
+    id: standards
+    attributes:
+      label: Standards checklist
+      options:
+        - label: I have read the [Contributing Guide](../blob/master/CONTRIBUTING.md).
+          required: true
+        - label: This suggestion does not leak NDA-bound or confidential materials.
+          required: true
+        - label: I am not promoting my own game, service, or portfolio.
+          required: true

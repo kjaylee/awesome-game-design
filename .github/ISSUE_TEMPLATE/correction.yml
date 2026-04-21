@@ -1,0 +1,59 @@
+name: 🔧 Correction / Broken Link
+description: Report a factual error, outdated figure, broken link, or typo in an existing file.
+title: "[Fix] "
+labels: ["correction", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for catching this. Factual corrections (dates, numbers, regulations, release history) are especially welcome — please cite your source.
+
+  - type: input
+    id: file
+    attributes:
+      label: File path
+      description: The file containing the issue (relative to repo root).
+      placeholder: resources/live-ops-playbook.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: line-or-section
+    attributes:
+      label: Section or line range
+      description: Paste the exact section heading or a few surrounding lines so the issue is locatable.
+      placeholder: |
+        ### FFXIV "A Realm Reborn"
+        - 2010.09.30: 1.0 출시 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect?
+      description: Describe the error clearly. For numbers/dates/regulations, state the current text and what it should be.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Authoritative source
+      description: URL, GDC Vault talk, official postmortem, or other verifiable source.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Typo / minor (formatting, punctuation, grammar)
+        - Link broken (target moved or removed)
+        - Factual (date, number, regulation, release history)
+        - Misleading (creates wrong impression even if technically true)
+        - Confidentiality concern (may contain leaked material)
+    validations:
+      required: true
