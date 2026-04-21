@@ -23,7 +23,9 @@
 
 ## 🟦 Sony PlayStation TRC (Technical Requirement Checklist)
 
-PS5 기준 ~200개 항목. 비공개 문서(Sony DevNet 로그인 필요). 아래는 공개된 카테고리 구조와 업계 공유 지식 기반.
+PS5 기준 ~200개 항목 규모. 공식 TRC 원문은 **Sony Partner Portal 로그인 자료를 정본**으로 하며, 본 문서는 그 대체가 아니다. 아래는 공개된 카테고리 구조와 GDC Vault talks · Gamasutra/Game Developer postmortems · 퇴임 개발자 공개 인터뷰를 합성한 요약이다.
+
+> ⚠️ Legal notice: 본 섹션은 공개 출처 기반 커뮤니티 분석이며, 각 플랫폼 holder와 맺은 NDA·공식 문서를 대체하지 않는다. 실제 제출 전에 반드시 해당 플랫폼의 partner portal 문서를 정본으로 확인할 것.
 
 ### 주요 카테고리
 
@@ -55,7 +57,9 @@ PS5 기준 ~200개 항목. 비공개 문서(Sony DevNet 로그인 필요). 아�
 - EULA·Privacy Policy 인앱 노출
 - GDPR, COPPA, LGPD 대응 (지역별)
 
-### 리젝 TOP 10 (Publisher Panel 공유, 2023)
+### 리젝 TOP 10 (공개 GDC Vault talks · postmortems · 개발자 인터뷰 합성, 2023 기준)
+
+> 아래 목록은 "Cert Survival Stories" 계열 GDC talks, Game Developer Magazine postmortem 아카이브, 퇴임 개발자 공개 인터뷰를 합성한 커뮤니티 요약이며, Sony·Microsoft·Nintendo 공식 문서와 어떤 관계도 주장하지 않는다.
 
 1. Save 중 전원 cut 시 크래시 또는 손상
 2. Trophy 카운팅 오류 (서버 동기화 실패)
@@ -315,7 +319,7 @@ D-0   | Launch
 
 ## 📚 참고 자료
 
-- Sony DevNet (비공개) — TRC 2024 revision
+- Sony Partner Portal — TRC 원문은 로그인 자료 (정본). 본 문서는 그 대체가 아님
 - [Xbox Requirements (XR)](https://learn.microsoft.com/en-us/gaming/xbox-live/test-release/xbox-requirements.md) (부분 공개)
 - Nintendo Developer Portal (비공개)
 - [App Store Review Guidelines (Apple)](https://developer.apple.com/app-store/review/guidelines/)

@@ -27,7 +27,7 @@
 | Cert / Launch | 200~300 |
 | Live team | 50~150 |
 
-> Uncharted 4: 피크 250+. Cyberpunk 2077: 500+. GTA V: 1,000+ (외주 포함 3,000+).
+> 인력 피크 예시: Uncharted 4 250+ (업계 추정). Cyberpunk 2077 500+ (CDPR 공개 발언). **GTA V 1,000+ (Rockstar Leslie Benzies 공식 인터뷰, GameSpot 2013)** — 일부 후속 보도는 2018 누적 기준 6,000+ 주장하나 공식 채널 근거 불명. 3,000+ 등 중간 수치는 출처 확인 필요.
 
 ---
 
@@ -35,14 +35,16 @@
 
 **Vertical Slice**: 최종 게임의 한 레벨 또는 한 시퀀스를 **출시 품질**로 뽑은 축소 버전. Publisher greenlight·팀 확장·파이프라인 검증의 핵심 근거.
 
-### 실제 사례 규모
+### 실제 사례 규모 (업계 추정치)
 
-| 스튜디오 / 게임 | VS 규모 | 투입 |
+> 아래 수치는 공식 발표보다는 공개 GDC talks · 퇴임 개발자 인터뷰 · 업계 보도 합성. 정확한 VS 팀 구성은 대부분 스튜디오가 공개하지 않는다. 수치를 계약·계획 근거로 쓰지 말 것.
+
+| 스튜디오 / 게임 | VS 규모 | 투입 (업계 추정, 비공식) |
 |---|---|---|
-| Naughty Dog / Uncharted 4 | 2 레벨 | 6개월, ~40명 |
-| Bungie / Destiny | Strike 1개 | 8개월, ~70명 |
-| Insomniac / Spider-Man | 오프닝 시퀀스 | 5개월, ~50명 |
-| Ubisoft / AC Valhalla | 노르웨이 오프닝 | 7개월, ~80명 |
+| Naughty Dog / Uncharted 4 | (공식 수치 미공개) | 2014년 pre-prod reboot 사실만 공식 확인 (Hennig → Druckmann/Straley 교체, 8개월치 스토리 폐기) |
+| Bungie / Destiny | Strike 1개 | ~8개월, ~70명 (업계 추정) |
+| Insomniac / Spider-Man | 오프닝 시퀀스 | ~5개월, ~50명 (업계 추정) |
+| Ubisoft / AC Valhalla | 노르웨이 오프닝 | ~7개월, ~80명 (업계 추정) |
 
 ### VS 체크리스트
 

@@ -234,6 +234,33 @@ Sprint Plan (2주)
 - 현재: MMO 시장 수위권, 2,400만+ 계정
 - **교훈**: 경영진의 "전면 reboot" 결단 + 후임 디렉터 임명은 재개발 공개 **3년 전**
 
+### Recovery Failed — 복구 실패 사례 (균형을 위해)
+
+> 위 세 사례만 보면 "commitment만 지속하면 어떤 재난도 복구 가능"이라 오독할 수 있다. 실제 live-service 복구 시도의 다수는 실패한다. 대표 실패 사례:
+
+#### Anthem / Anthem Next (BioWare / EA, 2019~2026)
+- 2019.02: Anthem 출시. 혹평·유저 이탈
+- 2019~2021: 재부팅 "Anthem Next" 내부 계획. ~30명 팀 투입
+- **2021.02.24**: BioWare 공식 취소 발표 (팬데믹·생산성 이유)
+- 2021~2026.01: 서비스 유지하되 **신규 콘텐츠 없음**
+- **2026.01**: 서버 완전 종료
+- **교훈**: 복구 commitment 선언 ≠ 성공. 팀 자원·회사 우선순위가 바뀌면 중단된다
+
+#### Marvel's Avengers (Crystal Dynamics / Square Enix, 2020~2023)
+- 2020.09: 출시, 혹평
+- 캐릭터 DLC 몇 개 추가 외 **재설계·확장 시도 없음**
+- **2023.09.30**: 공식 지원 종료, 디지털 스토어 상품 제거
+- **교훈**: Publisher가 복구 투자 의사 없으면 점진적 사망
+
+#### 기타 복구 미시도 종료 사례
+- **Battleborn** (Gearbox / 2K, 2016~2021)
+- **Lawbreakers** (Boss Key, 2017~2018, Boss Key 해산)
+- **Babylon's Fall** (Platinum / Square Enix, 2022~2023)
+- **Suicide Squad: Kill the Justice League** (Rocksteady, 2024~2025 지원 축소)
+
+#### 패턴 분석
+복구 성공 = **(publisher 장기 투자) × (강력한 후임 director) × (외부 IP·애니메이션 등 레버리지)**. 3요소 중 하나만 빠져도 실패. Cyberpunk는 3개 모두, No Man's Sky는 1·2, FFXIV는 1·2 확보. Anthem Next는 1·2·3 모두 부재 → 취소 필연.
+
 ---
 
 ## 💵 Monetization Compliance — 지역별 규제
