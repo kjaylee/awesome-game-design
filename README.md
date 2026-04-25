@@ -5,7 +5,9 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Last Updated](https://img.shields.io/badge/Updated-April%202026-orange.svg)]()
 
-> A world-class curated resource for game designers — GDD references, design theory, balancing frameworks, narrative tools, art direction, and marketing guides. Inspired by the curation philosophy of [awesome-design](https://github.com/gztchan/awesome-design).
+> 🌐 **Languages**: **English (this file)** · [한국어 (README.ko.md)](./README.ko.md)
+
+> A world-class curated resource for game designers — GDD references, design theory, balancing frameworks, narrative tools, art direction, marketing, AAA production, platform certification, and live-ops. Inspired by the curation philosophy of [awesome-design](https://github.com/gztchan/awesome-design).
 
 ---
 
@@ -13,7 +15,7 @@
 
 This repository is a **comprehensive knowledge base for game designers** — from indie solo developers to AAA studio leads. It collects the best theories, tools, historical GDDs, and practical frameworks that professional game designers rely on.
 
-**This is a public curation resource**, maintained to be the most useful game design reference on GitHub.
+**This is a public curation resource**, maintained to be the most useful game design reference on GitHub. Every entry answers a single question: *"What will a designer learn from this that they couldn't get from just Googling the title?"*
 
 ---
 
@@ -27,19 +29,20 @@ This repository is a **comprehensive knowledge base for game designers** — fro
   - [Game Balancing](#-game-balancing)
   - [Art Direction](#-art-direction)
   - [Marketing & QA](#-marketing--qa)
-  - [🆕 Production Pipeline (AAA)](#-production-pipeline-aaa)
-  - [🆕 Platform Certification](#-platform-certification)
-  - [🆕 Live Ops Playbook](#-live-ops-playbook)
+  - [Production Pipeline (AAA)](#-production-pipeline-aaa)
+  - [Platform Certification](#-platform-certification)
+  - [Live Ops Playbook](#-live-ops-playbook)
 - [How to Use This Repo](#how-to-use-this-repo)
 - [Contributing](#contributing)
+- [Trademarks & Legal Notice](#trademarks--legal-notice)
 
 ---
 
 ## SKILL.md
 
-**[→ SKILL.md (한국어)](./SKILL.md)** · **[→ SKILL.en.md (English)](./SKILL.en.md)** — A complete system prompt for Claude to act as a world-class game designer. Covers:
+**[→ SKILL.en.md (English)](./SKILL.en.md)** · **[→ SKILL.md (한국어)](./SKILL.md)** — A complete system prompt for Claude to act as a world-class game designer. Covers:
 
-- Role definition (System Designer, Narrative Designer, UX Designer, PM, Visual Director)
+- Role definition (Systems Designer, Narrative Designer, UX Designer, PM, Visual Director)
 - Awesome Design principles adapted for games (color theory, typography, UX patterns, animation)
 - GDD writing standards and template (10-section structure)
 - Game mechanic classification system
@@ -178,15 +181,15 @@ From first commit to launch week and beyond:
 
 **[→ resources/production-pipeline.md](./resources/production-pipeline.md)**
 
-AAA 스튜디오가 실제로 쓰는 제작 파이프라인 — 인디·AA가 "왜 AAA는 2~5년 걸리나"를 이해할 때도 유용:
+The actual production pipeline used by AAA studios — also useful for indie/AA teams trying to understand "why does AAA take 2–5 years?":
 
-**전체 단계**: Concept → Pre-production → Production (Alpha/Beta/Code Lock) → Certification → Launch → Live
-**Gate Criteria**: 각 단계 통과 조건 명문화 (Blocker 수, 크래시 율, Cert 통과율, Localization lock)
-**Vertical Slice**: Uncharted 4·Destiny·Spider-Man·AC Valhalla의 실제 VS 규모와 체크리스트
-**Greenlight**: 10장 피치덱 표준 구조 + Publisher 판정 rubric (7개 항목 가중치)
-**Milestone Payments**: Signing 15% → Prototype 10% → Alpha 20% → Beta 20% → Gold 15% → Launch 10% + Royalty
-**RACI / DRI**: Design pillar 변경·scope cut·platform 추가·delay·crunch 결정에 대한 책임 매트릭스
-**심화 사례**: Uncharted 4 감독 교체 reboot, Cyberpunk 2077 cert fail, Baldur's Gate 3의 EA-as-production, Starfield 엔진 동시 개발
+- **Stages**: Concept → Pre-production → Production (Alpha / Beta / Code Lock) → Certification → Launch → Live
+- **Gate criteria**: explicit pass conditions per stage (blocker count, crash rate, cert pass rate, localization lock)
+- **Vertical Slice**: real-world VS scope and checklists from Uncharted 4, Destiny, Spider-Man, AC Valhalla
+- **Greenlight**: 10-slide pitch-deck template + publisher-side judging rubric (7 weighted criteria)
+- **Milestone payments**: Signing 15% → Prototype 10% → Alpha 20% → Beta 20% → Gold 15% → Launch 10% + royalty (industry-average estimates)
+- **RACI / DRI**: responsibility matrix for design pillar changes, scope cuts, platform additions, delays, and crunch decisions
+- **Deep cases**: Uncharted 4 director-replacement reboot, Cyberpunk 2077 cert/launch fail, Baldur's Gate 3 EA-as-production, Starfield engine co-development
 
 ---
 
@@ -194,16 +197,16 @@ AAA 스튜디오가 실제로 쓰는 제작 파이프라인 — 인디·AA가 "�
 
 **[→ resources/platform-certification.md](./resources/platform-certification.md)**
 
-플랫폼 인증은 AAA 출시 일정 리스크 1위 — 이 문서 하나로 커버:
+Platform certification is the #1 schedule risk for AAA launches — this single document covers it:
 
-**플랫폼별 상세**: PS TRC 200+ / Xbox XR 150+ / Switch Lotcheck / Steam Partner / Apple App Review / Google Play / EGS
-**리젝 TOP 10 (PS5)**: Save crash, trophy 오류, region lock 미적용, accessibility 누락 등
-**XAGs (Xbox Accessibility Guidelines) 60+**: Input·Audio·Visual·Cognitive·Motor 카테고리별 상세
-**Nintendo Lotcheck 특별 요구**: Docked vs Handheld 이중 성능, JoyCon 전 조합, Parental control
-**Rating 기관 비교**: ESRB / PEGI / CERO / USK / 게임위 / ACB / 판호 — 비용·기간·제출 방식
-**지역 규제**: 한국 확률 공시 의무화(2024.03), 중국 판호 제도, 벨기에 loot box 금지
-**공통 Fail Top 20**: 크로스 플랫폼에서 반복 발생하는 리젝 사유
-**Cert 타임라인**: Gold 4주 전 제출, 3개 리전 병렬, Day-1 patch 별도 제출 기준
+- **Per-platform detail**: PS TRC ~200 / Xbox XR ~150 / Switch Lotcheck / Steam Partner / Apple App Review / Google Play / EGS
+- **Top 10 PS5 rejection causes**: save crash, trophy errors, region lock, accessibility, etc.
+- **XAGs (Xbox Accessibility Guidelines) — 120+**: Input · Audio · Visual · Cognitive · Motor categories with representative XAG numbers
+- **Nintendo Lotcheck specifics**: dual-mode (Docked vs Handheld) performance, JoyCon combination matrix, parental control compliance
+- **Rating bodies compared**: ESRB / PEGI / CERO / USK / GRAC (Korea) / ACB / China 판호 — fees, turnaround, submission method
+- **Regional regulation**: Korea probability disclosure (GIPA, effective 2024-03-22), China 판호 system, Belgium loot box ban
+- **Common cross-platform fail reasons (Top 20)**: rejection causes that recur across platforms
+- **Cert timeline**: Gold-master 4 weeks before launch, parallel submission across 3 regions, separate Day-1 patch submission
 
 ---
 
@@ -211,20 +214,22 @@ AAA 스튜디오가 실제로 쓰는 제작 파이프라인 — 인디·AA가 "�
 
 **[→ resources/live-ops-playbook.md](./resources/live-ops-playbook.md)**
 
-출시는 1일차 — 3~10년 live 서비스 운영 매뉴얼:
+Launch is Day One — a 3-to-10-year live service operations playbook:
 
-**서비스 모델 분류**: Season-based (Fortnite/Apex), Expansion (FF14/WoW), Episodic, Gacha, Hybrid
-**시즌 구조 표준**: 8~12주 시즌의 Week 0~12 주간 이벤트 배치 (Fortnite, Destiny 2 Episode, FF14 cadence)
-**KPI 대시보드 전문**:
+- **Service model taxonomy**: Season-based (Fortnite, Apex), Expansion (FF14, WoW), Episodic, Gacha, Hybrid
+- **Standard 8–12 week season structure**: Week-by-week event placement with examples from Fortnite, Destiny 2 Episodes, FFXIV cadence
+- **Full KPI dashboard**:
   - Engagement: DAU/MAU, sticky ratio, D1/D7/D30 retention
   - Monetization: ARPDAU, ARPPU, conversion, LTV, whale share
   - Economy: inflation index, source/sink ratio, rarity drift
   - Operational: crash-free rate, SLA, MTTR
-**Anti-cheat 비교**: Easy Anti-Cheat / BattlEye / Vanguard / Denuvo / VAC — 커널 레벨과 트레이드오프
-**Launch Disaster Recovery**: Cyberpunk 3년·No Man's Sky 8년·FFXIV Realm Reborn 전면 reboot 사례
-**Sunset Playbook**: D-180부터 D+30까지 서비스 종료 체크리스트 (Concord 2주 종료, WildStar, P.T. 사례)
-**Monetization Compliance**: 한국 확률 공시 2024.03, 중국 판호, 벨기에 전면 금지, FTC Fortnite $245M 합의
-**A/B 실험 운영**: Riot·Supercell·Epic의 실험 트래픽·평가 지표·의사결정 표준
+- **Anti-cheat comparison**: Easy Anti-Cheat / BattlEye / Vanguard / Denuvo / VAC — kernel-level tradeoffs
+- **Launch Disaster Recovery**: 3-year Cyberpunk recovery, 8-year No Man's Sky redemption, FFXIV's "A Realm Reborn" full reboot
+- **Recovery Failed**: Anthem Next (cancelled 2021, servers off 2026.01), Marvel's Avengers (no recovery attempted, EOL 2023.09), Battleborn / Lawbreakers / Babylon's Fall — three-factor success pattern
+- **Sunset Playbook**: D-180 to D+30 service-shutdown checklist (Concord 14-day closure, WildStar, P.T. cases)
+- **Monetization Compliance**: Korea probability disclosure 2024.03, China 판호, Belgium total ban, FTC Epic Games $520M settlement (2022.12)
+- **Asia Live Service Cases**: Korean MMOs (Lineage, MapleStory ₩116억 2024 settlement, Lost Ark, Umamusume KR protests) and Chinese gacha/SLG (HoYoverse cadence, PUBG Mobile vs Peacekeeper Elite, Honor of Kings, SLG server wars)
+- **A/B testing operations**: Riot, Supercell, Epic — traffic allocation, evaluation metrics, decision standards
 
 ---
 
@@ -232,7 +237,7 @@ AAA 스튜디오가 실제로 쓰는 제작 파이프라인 — 인디·AA가 "�
 
 ### As a Claude System Prompt
 
-Paste [SKILL.md](./SKILL.md) (Korean) or [SKILL.en.md](./SKILL.en.md) (English) before your message to Claude to activate full game designer mode. Claude can then:
+Paste [SKILL.en.md](./SKILL.en.md) (English) or [SKILL.md](./SKILL.md) (Korean) before your message to Claude to activate full game-designer mode. Claude can then:
 
 - Write complete 10-section GDDs
 - Generate HTML artifact game UI prototypes instantly
@@ -242,7 +247,7 @@ Paste [SKILL.md](./SKILL.md) (Korean) or [SKILL.en.md](./SKILL.en.md) (English) 
 
 ### For Solo Indie Developers
 
-1. **SKILL.md** → system prompt for all game design work
+1. **SKILL.en.md** → system prompt for all game design work
 2. **resources/narrative-design.md** → pick your dialogue tool and script format
 3. **resources/game-balancing.md** → copy the progression formulas into a spreadsheet
 4. **resources/marketing-qa.md** → run the launch checklist 3 months before release
@@ -251,27 +256,27 @@ Paste [SKILL.md](./SKILL.md) (Korean) or [SKILL.en.md](./SKILL.en.md) (English) 
 
 1. **resources/famous-gdds.md** → required reading for new team members
 2. **resources/postmortems.md** → retrospective reference ("what has gone wrong before?")
-3. SKILL.md GDD template → standard format for all new project documents
+3. SKILL GDD template → standard format for all new project documents
 
 ### For AAA / Large Studios
 
-1. **resources/production-pipeline.md** → Internal pre-prod·production·cert timeline 템플릿 대체 또는 교차 검증용. Greenlight 판정 rubric을 내부 greenlight review에 직접 적용 가능
-2. **resources/platform-certification.md** → QA 리드·프로듀서를 위한 cert 사전 체크리스트. 1차 submission 전 self-audit 기준으로 사용. 지역 규제(한국 확률 공시, 중국 판호)는 publishing·legal 팀과 공유
-3. **resources/live-ops-playbook.md** → Live ops director·PM을 위한 KPI·sunset·A/B 프레임워크. Launch disaster 사례는 neue 프로젝트의 리스크 리뷰에 활용
-4. **resources/game-balancing.md** → PvP ELO·MMR, gacha pity, idle cost curve는 기존 AAA 밸런스팀 공식과 교차 확인 가능
+1. **resources/production-pipeline.md** — Use as a template substitute or cross-check for internal pre-prod / production / cert timelines. The greenlight rubric can be applied directly to internal greenlight reviews.
+2. **resources/platform-certification.md** — A pre-cert self-audit checklist for QA leads and producers. Use it as a self-audit baseline before first submission. Share regional regulation entries (Korea probability disclosure, China 판호) with publishing/legal teams.
+3. **resources/live-ops-playbook.md** — KPI / sunset / A/B framework for live ops directors and PMs. Use the disaster-recovery cases for risk reviews on new projects.
+4. **resources/game-balancing.md** — Cross-check the PvP ELO/MMR, gacha pity, and idle cost-curve formulas against your existing balance team's formulas.
 
 ### For Students
 
 1. Read all postmortems — honest game design education
 2. Study famous GDDs — understand the gap between plan and reality
 3. Apply balancing formulas to class projects before guessing numbers
-4. Production pipeline — 업계 진입 준비생을 위한 "AAA는 어떻게 일하는가" 설명서
+4. Production pipeline — a "how AAA actually works" primer for industry-bound students
 
 ---
 
 ## Contributing
 
-Contributions are welcome! This repo grows by adding depth, not breadth.
+Contributions are welcome. This repo grows through depth, not breadth.
 
 **We accept:**
 - New entries with explanation + key lesson (not just links)
@@ -282,10 +287,11 @@ Contributions are welcome! This repo grows by adding depth, not breadth.
 - Personal game portfolio items
 - Promotional content
 - Link dumps without context or analysis
+- Material that violates platform NDAs (Sony DevNet, Xbox XR, Nintendo Lotcheck, etc.)
 
 **Standard:** Every entry should answer: *"What will a designer learn from this that they couldn't get from just Googling the title?"*
 
-To contribute: Fork → Branch (`resource/your-topic`) → Add content → Pull Request with description.
+To contribute: Fork → Branch (`resource/your-topic`) → Add content → Pull Request with description. See [CONTRIBUTING.md](./CONTRIBUTING.md) for full standards and [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for community expectations.
 
 ---
 
