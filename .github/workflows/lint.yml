@@ -1,0 +1,60 @@
+name: Lint & Link Check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '.github/workflows/lint.yml'
+      - '.markdownlint-cli2.yaml'
+      - '.lycheeignore'
+  push:
+    branches: [master]
+    paths:
+      - '**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  markdownlint:
+    name: markdownlint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          globs: |
+            **/*.md
+            !node_modules
+            !.github/PULL_REQUEST_TEMPLATE.md
+
+  link-check:
+    name: lychee link check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Lychee link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --max-concurrency 8
+            --cache
+            --max-cache-age 7d
+            './**/*.md'
+          fail: true

@@ -1,0 +1,50 @@
+# markdownlint-cli2 configuration for awesome-game-design
+# Tuned for a curation-style repo with long-form Korean and English mixed
+# documents. Strict rules that would create noise are relaxed; rules that
+# guard real readability problems are kept on.
+
+config:
+  default: true
+
+  # Line length — disabled because resource files contain long quotes,
+  # tables, and citations that don't benefit from forced wrapping
+  MD013: false
+
+  # Multiple headings with same content — allow when scoped to different
+  # sections (siblings_only) so the AAA / live-ops / cert files can reuse
+  # subsection titles like "Pros / Cons"
+  MD024:
+    siblings_only: true
+
+  # Multiple top-level (H1) headings — Issue Templates are YAML, not MD,
+  # but anything else with multiple H1s should fail. Disabled because
+  # some docs include archived audit reports as H1 sections.
+  MD025: false
+
+  # Inline HTML — allowed for badges and embedded comments
+  MD033: false
+
+  # Bare URLs — allowed; not all references can or should be link-formatted
+  MD034: false
+
+  # Emphasis used instead of heading — used intentionally in tables and
+  # callouts ("Why:", "How to apply:")
+  MD036: false
+
+  # Fenced code without language — allowed for ASCII art / diagrams
+  MD040: false
+
+  # First line should be H1 — disabled to allow YAML frontmatter and
+  # cross-link headers above the H1
+  MD041: false
+
+  # Images should have alt text — disabled for shields.io badges where
+  # the alt is conventionally redundant
+  MD045: false
+
+ignores:
+  - 'node_modules/**'
+  - '.github/PULL_REQUEST_TEMPLATE.md'
+  - '.github/ISSUE_TEMPLATE/**'
+  - 'CHANGELOG.md'
+  - 'docs/archive/**'
