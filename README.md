@@ -37,7 +37,7 @@ This repository is a **comprehensive knowledge base for game designers** — fro
 
 ## SKILL.md
 
-**[→ SKILL.md](./SKILL.md)** — A complete system prompt for Claude to act as a world-class game designer. Covers:
+**[→ SKILL.md (한국어)](./SKILL.md)** · **[→ SKILL.en.md (English)](./SKILL.en.md)** — A complete system prompt for Claude to act as a world-class game designer. Covers:
 
 - Role definition (System Designer, Narrative Designer, UX Designer, PM, Visual Director)
 - Awesome Design principles adapted for games (color theory, typography, UX patterns, animation)
@@ -232,7 +232,7 @@ AAA 스튜디오가 실제로 쓰는 제작 파이프라인 — 인디·AA가 "�
 
 ### As a Claude System Prompt
 
-Paste [SKILL.md](./SKILL.md) before your message to Claude to activate full game designer mode. Claude can then:
+Paste [SKILL.md](./SKILL.md) (Korean) or [SKILL.en.md](./SKILL.en.md) (English) before your message to Claude to activate full game designer mode. Claude can then:
 
 - Write complete 10-section GDDs
 - Generate HTML artifact game UI prototypes instantly
