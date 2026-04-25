@@ -100,6 +100,15 @@ Explanation (2–4 sentences) of what the reader should internalize.
 5. **Open a PR** to `master` using the PR template.
 6. **Respond to review** within a reasonable timeframe. Stale PRs may be closed after 60 days.
 
+### Automated Checks
+
+Every PR runs two GitHub Actions:
+
+- **Lint & Link Check** (`.github/workflows/lint.yml`): markdownlint + lychee link verification on changed Markdown files
+- **Sources Verified Freshness** (`.github/workflows/sources-verified-freshness.yml`): monthly cron that opens a maintenance issue when any `Sources Verified (YYYY-MM-DD)` badge is older than 180 days
+
+PRs that fail link check or markdown lint will not be merged. Run `npm install -g markdownlint-cli2 && markdownlint-cli2 '**/*.md'` locally to preview, or open a draft PR to let CI surface issues.
+
 ### Commit Style
 
 Conventional Commits preferred but not strictly enforced:

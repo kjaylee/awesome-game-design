@@ -1,0 +1,24 @@
+# lychee link-check ignore patterns
+
+# Internal anchor links — lychee does not always resolve in-page anchors
+# correctly across mixed-language headers; markdown linter handles these
+^#
+
+# Localhost and example domains used in code samples
+localhost
+127\.0\.0\.1
+example\.com
+example\.org
+
+# OAuth / login-required URLs
+discord\.com/oauth
+github\.com/.+/oauth
+
+# Internal NDA-bound platform portals (intentionally unreachable externally)
+partner\.steamgames\.com/doc
+developer\.playstation\.com
+partner\.microsoft\.com/dashboard
+
+# Common rate-limited or geo-fenced sources
+fonts\.adobe\.com
+adobe\.com/products/aftereffects
